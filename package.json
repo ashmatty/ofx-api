@@ -1,0 +1,25 @@
+{
+  "name": "ofx-api",
+  "version": "1.0.0",
+  "description": "OFX library to parse OFX files in a clean manner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashmatty/ofx-api.git"
+  },
+  "keywords": [
+    "OFX"
+  ],
+  "author": "Matthew Gould <mldgould@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashmatty/ofx-api/issues"
+  },
+  "homepage": "https://github.com/ashmatty/ofx-api#readme",
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  }
+}
