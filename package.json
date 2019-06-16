@@ -4,7 +4,10 @@
   "description": "OFX library to parse OFX files in a clean manner.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require ts-node/register src/**/*.spec.ts",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,22 @@
   },
   "homepage": "https://github.com/ashmatty/ofx-api#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/jest": "^24.0.12",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.4.5"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "xml2js": "^0.4.19"
   }
 }
